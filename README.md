@@ -16,3 +16,5 @@ All shell scripts _must_ source `lock.sh` and then have a few boilerplate lines 
     set -e
     source "$(dirname)/lock.sh"
     lock 123 || eexit "Already an instance of this script running, $0"
+
+The example script is rsyncFiles.sh, and it has this boilerplate language in it plus a nifty rsync command.
